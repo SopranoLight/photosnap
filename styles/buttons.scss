@@ -1,3 +1,50 @@
-button{
-    border: 1px solid #000;
+.btn__invite{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 12px 24px;
+    transition: color var(--transition), background-color var(--transition);
+
+     &:focus, &:active, &:visited{
+        color: var(--white);
+       }
+       &:hover{
+        color: var(--black);
+        background-color: var(--light-grey);
+       }
+}
+.btn__link-white{
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    max-width: 170px;
+    transition: color var(--transition), text-decoration var(--transition);
+
+    &:hover, &:focus, &:active, &:visited{
+        color: var(--white);
+        text-decoration: underline;
+       }
+}
+.btn__link{
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    max-width: 207px;
+    transition: color var(--transition), text-decoration var(--transition);
+
+    &:hover, &:focus, &:active, &:visited{
+        color: var(--black);
+        text-decoration: underline;
+       }
+}
+.btn__story{
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    &:hover, &:focus, &:active, &:visited{
+        color: var(--white);
+       }
 }

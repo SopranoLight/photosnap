@@ -8,3 +8,14 @@ transition: color var(--transition), opacity var( --transition);
  opacity: 0.3;
 }
 }
+
+.footer__link{
+    color: var(--white);
+    transition: color var(--transition), opacity var( --transition);
+    
+    &:hover, &:focus, &:active, &:visited{
+     color: var(--white);
+     mix-blend-mode: normal;
+     opacity: 0.3;
+    } 
+}

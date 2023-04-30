@@ -1,6 +1,139 @@
-@use '../../style.scss';
+@use '../../styles/global.scss';
 
 
-body{
-    background: #000;
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../fonts/dm-sans-v11-latin/dm-sans-v11-latin-regular.woff2")
+        format("woff2"),
+      /* Chrome 36+, Opera 23+, Firefox 39+ */
+        url("../../fonts/dm-sans-v11-latin/dm-sans-v11-latin-700.woff")
+        format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* dm-sans-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../../fonts/dm-sans-v11-latin/dm-sans-v11-latin-700.woff2")
+        format("woff2"),
+      /* Chrome 36+, Opera 23+, Firefox 39+ */
+        url("../../fonts/dm-sans-v11-latin/dm-sans-v11-latin-regular.woff")
+        format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  .main-block{
+    min-height: 650px;
+    background-image: url(./img/bg-main.jpg);
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    padding: 122px 0 122px 112px;
+  }
+
+  .main-block__info{
+    width: 387px;
+  }
+
+  .main-block__story{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: var(--white); 
+    display: block;
+    margin-bottom: 24px;
+  }
+.main-block__title{
+    color: var(--white);
+    margin-bottom: 16px;
 }
+.main-block__who{
+    color: var(--white);
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    display: flex;
+    gap: 9px;
+}
+
+.main-block__who-in{
+    opacity: 0.75;
+}
+.main-block__paragraf{
+    color: var(--white);
+    opacity: 0.75;
+    margin-bottom: 24px;
+}
+
+.card__time{
+    margin-bottom: 4px;
+}
+
+.card-1{
+   background-image: url(./img/1-4/one-for.png); 
+}
+.card-2{
+    background-image: url(./img/1-4/two-for.png); 
+ }
+ .card-3{
+    background-image: url(./img/1-4/tree-for.png); 
+ }
+ .card-4{
+    background-image: url(./img/1-4/for-for.png); 
+ }
+
+
+
+
+ .card-2-1{
+    background-image: url(./img/2-4/one-for.png); 
+ }
+ .card-2-2{
+    background-image: url(./img/2-4/two-for.png); 
+ }
+ .card-2-3{
+    background-image: url(./img/2-4/tree-for.png); 
+ }
+ .card-2-4{
+    background-image: url(./img/2-4/for-for.png); 
+ }
+
+
+
+ .card-3-1{
+    background-image: url(./img/3-4/one-for.png); 
+ }
+ .card-3-2{
+    background-image: url(./img/3-4/two-for.png); 
+ }
+ .card-3-3{
+    background-image: url(./img/3-4/tree-for.png); 
+ }
+ .card-3-4{
+    background-image: url(./img/3-4/for-for.png); 
+ }
+
+
+
+
+ .card-4-1{
+    background-image: url(./img/4-4/one-for.png); 
+ }
+ .card-4-2{
+    background-image: url(./img/4-4/two-for.png); 
+ }
+ .card-4-3{
+    background-image: url(./img/4-4/tree-for.png); 
+ }
+ .card-4-4{
+    background-image: url(./img/4-4/for-for.png); 
+ }
+
+
+
+

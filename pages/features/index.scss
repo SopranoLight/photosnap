@@ -1,6 +1,71 @@
-@use '../../style.scss';
+@use '../../styles/global.scss';
 
 
-body{
- background: green;
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../fonts/dm-sans-v11-latin/dm-sans-v11-latin-regular.woff2")
+        format("woff2"),
+      /* Chrome 36+, Opera 23+, Firefox 39+ */
+        url("../../fonts/dm-sans-v11-latin/dm-sans-v11-latin-700.woff")
+        format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* dm-sans-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../../fonts/dm-sans-v11-latin/dm-sans-v11-latin-700.woff2")
+        format("woff2"),
+      /* Chrome 36+, Opera 23+, Firefox 39+ */
+        url("../../fonts/dm-sans-v11-latin/dm-sans-v11-latin-regular.woff")
+        format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+
+  .main-block{
+    height: 490px;
+    background-color: var(--black);
+    display: flex;
+    
+  }
+.main-block__info{
+    padding: 173px 112px;
+    width: 610px;
+    position: relative;
+}
+.main-block__info::before{
+    content: '';
+    width: 6px;
+    min-height: 144px;
+    background: var(--gradient);
+    position: absolute;
+    left: 0;
+}
+.main-block__title{
+    color: var(--white); 
+    margin-bottom: 21px;
+}
+
+.main-block__paragraf{
+    color: var(--white);
+    opacity: 0.6;
+}
+
+.main-block__foto{
+    background-image: url(./img/bg-features.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%;
+    height: 100%;
+}
+
+
+.beta{
+  background-image: url(../features/img/bg-mini-features.jpg);
+  background-size: cover;
 }

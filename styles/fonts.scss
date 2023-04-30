@@ -37,9 +37,9 @@ letter-spacing: 4.16667px;
 text-transform: uppercase;
 }
 .mini-title{
-    font-weight: 700;
-    font-size: 1.125em;
-    line-height: 25px; 
+  font-weight: 700;
+  font-size: 1.125em;
+  line-height: 25px; 
 }
 .paragraf{
 font-weight: 400;
@@ -49,4 +49,16 @@ mix-blend-mode: normal;
 opacity: 0.6;
 }
 
-
+.card__info{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+}
+.copyright{
+  font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+  mix-blend-mode: normal;
+opacity: 0.5;
+color: var(--white);
+}
